@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ba892ec3401a4cd5a2ef0f6464836241" Name="Diagram1">
+        <EntityTypeShape EntityType="Registration_Birth_cirtificateModel.Children_information" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Registration_Birth_cirtificateModel.Hosital_information" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="Registration_Birth_cirtificateModel.FK_Hosital_information_Children_information" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Registration_Birth_cirtificateModel.User" Width="1.5" PointX="0.75" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

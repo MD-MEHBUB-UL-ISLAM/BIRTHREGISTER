@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Registration_Birth_cirtificateModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Children_information">
+    <Key>
+      <PropertyRef Name="BirthRegistrationNumber" />
+    </Key>
+    <Property Name="ChildrenName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Dateofbirth" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BirthRegistrationNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="placeofbirth" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FatherNmae" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MotherName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parmanentAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FatherNationality" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MotherNationality" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hosital_information">
+    <Key>
+      <PropertyRef Name="HospitalCode" />
+    </Key>
+    <Property Name="HospitalName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HospitalLocation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HospitalCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TimeofBirth" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Hosital_information_Children_information">
+    <End Role="Children_information" Type="Self.Children_information" Multiplicity="1" />
+    <End Role="Hosital_information" Type="Self.Hosital_information" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Children_information">
+        <PropertyRef Name="BirthRegistrationNumber" />
+      </Principal>
+      <Dependent Role="Hosital_information">
+        <PropertyRef Name="HospitalCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Registration_Birth_cirtificateModelStoreContainer">
+    <EntitySet Name="Children_information" EntityType="Self.Children_information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hosital_information" EntityType="Self.Hosital_information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Hosital_information_Children_information" Association="Self.FK_Hosital_information_Children_information">
+      <End Role="Children_information" EntitySet="Children_information" />
+      <End Role="Hosital_information" EntitySet="Hosital_information" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

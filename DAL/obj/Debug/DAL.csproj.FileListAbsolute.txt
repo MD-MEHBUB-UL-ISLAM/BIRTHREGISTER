@@ -1,0 +1,10 @@
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\bin\Debug\DAL.dll.config
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\bin\Debug\DAL.dll
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\bin\Debug\DAL.pdb
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\bin\Debug\EntityFramework.dll
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\bin\Debug\EntityFramework.xml
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\obj\Debug\DAL.dll
+C:\Users\88018\source\repos\BirthCitificateManagement\DAL\obj\Debug\DAL.pdb
