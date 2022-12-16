@@ -9,8 +9,6 @@ namespace BLL.DTOs
 {
     public class ChildinfoDTO
     {
-
-
         public string ChildrenName { get; set; }
         public string Dateofbirth { get; set; }
         public int BirthRegistrationNumber { get; set; }
@@ -24,3 +22,4 @@ namespace BLL.DTOs
         public virtual Hosital_information Hosital_information { get; set; }
     }
 }
+

@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DAL.Repo
@@ -12,12 +11,12 @@ namespace DAL.Repo
     public class BIRTHREGISTER : IRepo<Children_information, int, bool>
     {
 
-        Registration_Birth_cirtificateEntities db;
+        BIRTHEntities db;
 
 
         internal BIRTHREGISTER()
         {
-            db = new Registration_Birth_cirtificateEntities();
+            db = new BIRTHEntities();
         }
 
         public bool Add(Children_information obj)
@@ -31,28 +30,29 @@ namespace DAL.Repo
             throw new NotImplementedException();
         }
 
-        public bool Delete(int BirthRegistrationNumber)
+        public bool Delete(int id)
         {
-            var ext = db.Children_information.Find(BirthRegistrationNumber);
+            var ext = db.Children_information.Find(id);
             db.Children_information.Remove(ext);
             return db.SaveChanges() > 0;
         }
 
         public List<Children_information> Get()
         {
-           return db.Children_information.ToList();
+            return db.Children_information.ToList();
         }
 
-        public Children_information Get(int BirthRegistrationNumber)
+        public Children_information Get(int id)
         {
-            return db.Children_information.Find(BirthRegistrationNumber);
+            return db.Children_information.Find(id);
         }
 
         public bool Update(Children_information obj)
         {
             var ext = Get(obj.BirthRegistrationNumber);
             db.Entry(ext).CurrentValues.SetValues(obj);
-            return db.SaveChanges() > 0;    
+            return db.SaveChanges() > 0;
+
 
         }
     }

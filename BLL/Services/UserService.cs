@@ -15,11 +15,11 @@ namespace BLL.Services
         public List<UserDTO> Get()
         {
             var dbdata = DataAccessFactory.UserDataAccess().Get();
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<UserService,UserDTO>());
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<UserService, UserDTO>());
             var mapper = new Mapper(config);
             var rdata = mapper.Map<List<UserDTO>>(dbdata);
             return rdata;
-          
+
 
 
         }
@@ -36,8 +36,8 @@ namespace BLL.Services
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<UserService, UserDTO>();
-                cfg.CreateMap<UserService, UserDTO>();
+                cfg.CreateMap<User, UserDTO>();
+                cfg.CreateMap< UserDTO, User>();
             });
             var mapper = new Mapper(config);
             var data = mapper.Map<UserDTO>(dto);
@@ -52,7 +52,7 @@ namespace BLL.Services
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<UserService, UserDTO>();
-                cfg.CreateMap<UserService, UserDTO>();
+                cfg.CreateMap<UserDTO, User>();
             });
             var mapper = new Mapper(config);
             var data = mapper.Map<UserDTO>(dto);
@@ -62,8 +62,4 @@ namespace BLL.Services
         }
     }
 }
-
-
-
-
 

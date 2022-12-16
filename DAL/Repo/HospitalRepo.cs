@@ -1,70 +1,54 @@
-﻿using DAL.Interfaces;
+﻿using DAL.EF;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.EF;
 
 namespace DAL.Repo
 {
-    class HospitalRepo : IRepo<Children_information, int, Children_information>
-    
-
-      
-
-
-
+    public class HospitalRepo : IRepo<Hosital_information, int, Hosital_information>
     {
-        Registration_Birth_cirtificateEntities db;
-
-
+        BIRTHEntities db;
         internal HospitalRepo()
         {
-            db = new Registration_Birth_cirtificateEntities();              
+            db = new BIRTHEntities();
         }
-
-
-
-
-        public Children_information Add(Children_information obj)
+        public Hosital_information Add(Hosital_information obj)
         {
-            db.Children_information.Add(obj);   
+            db.Hosital_information.Add(obj);
             db.SaveChanges();
             return obj;
         }
 
-        public Children_information Authenticate(string uname, string password)
+        public Hosital_information Authenticate(string uname, string password)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(int BirthRegistrationNumber)
+        public bool Delete(int id)
         {
-            db.Children_information.Remove(db.Children_information.Find(BirthRegistrationNumber));
+            db.Hosital_information.Remove(db.Hosital_information.Find(id));
             db.SaveChanges();
             return db.SaveChanges() > 0;
-
-
-
-
         }
 
-        public List<Children_information> Get()
+        public List<Hosital_information> Get()
         {
-            return db.Children_information.ToList();    
+            return db.Hosital_information.ToList();
         }
 
-        public Children_information Get(int BirthRegistrationNumber)
+        public Hosital_information Get(int id)
         {
-            return db.Children_information.Find(BirthRegistrationNumber);
+            return db.Hosital_information.Find(id);
         }
-
-        public bool Update(Children_information obj)
+        public bool Update(Hosital_information obj)
         {
-            var ext = db.Children_information.Find(obj.BirthRegistrationNumber);
+            var ext = Get(obj.HospitalID);
             db.Entry(ext).CurrentValues.SetValues(obj);
-            return db.SaveChanges()> 0;
+            return db.SaveChanges() > 0;
         }
     }
 }
+

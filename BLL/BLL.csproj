@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE7867F5-7291-453D-9172-CC25C893319A}</ProjectGuid>
+    <ProjectGuid>{4F4BAE2E-28CC-409C-88C8-C10E519E6DC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL</RootNamespace>
@@ -35,6 +35,7 @@
       <HintPath>..\packages\AutoMapper.10.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,18 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DTOs\ChildinfoDTO.cs" />
+    <Compile Include="DTOs\EmployeeDTO.cs" />
     <Compile Include="DTOs\HospitalDTO.cs" />
+    <Compile Include="DTOs\HospitalEmployeeDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
+    <Compile Include="DTOs\VolenteerDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\HospitalService.cs" />
     <Compile Include="Services\ChildService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\HospitalEmployeeService.cs" />
+    <Compile Include="Services\HospitalService.cs" />
     <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\VolenteerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{19c9036f-c1f6-4466-895f-fbda9773bbf2}</Project>
+      <Project>{158f182e-fa8a-47a6-879e-6f4e262412da}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>

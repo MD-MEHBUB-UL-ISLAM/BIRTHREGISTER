@@ -13,10 +13,10 @@ namespace DAL.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Registration_Birth_cirtificateEntities : DbContext
+    public partial class BIRTHEntities : DbContext
     {
-        public Registration_Birth_cirtificateEntities()
-            : base("name=Registration_Birth_cirtificateEntities")
+        public BIRTHEntities()
+            : base("name=BIRTHEntities")
         {
         }
     
@@ -26,8 +26,10 @@ namespace DAL.EF
         }
     
         public DbSet<Children_information> Children_information { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Hosital_information> Hosital_information { get; set; }
+        public DbSet<HospitalEmployee> HospitalEmployees { get; set; }
         public DbSet<User> Users { get; set; }
-        public object Groups { get; internal set; }
+        public DbSet<VolInfo> VolInfoes { get; set; }
     }
 }

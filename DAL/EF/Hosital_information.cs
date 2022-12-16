@@ -14,11 +14,17 @@ namespace DAL.EF
     
     public partial class Hosital_information
     {
+        public Hosital_information()
+        {
+            this.Children_information = new HashSet<Children_information>();
+        }
+    
         public string HospitalName { get; set; }
         public string HospitalLocation { get; set; }
         public int HospitalCode { get; set; }
         public string TimeofBirth { get; set; }
+        public int HospitalID { get; set; }
     
-        public virtual Children_information Children_information { get; set; }
+        public virtual ICollection<Children_information> Children_information { get; set; }
     }
 }

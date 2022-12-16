@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IRepo<CLASS,ID,RESULT>
+    public interface IRepo<CLASS, ID, RESULT>
     {
-        List<CLASS>Get();
-        CLASS Get(ID BirthRegistrationNumber);
+        List<CLASS> Get();
+        CLASS Get(ID id);
         RESULT Add(CLASS obj);
-        bool Delete(ID BirthRegistrationNumber);
-        bool Update(CLASS obj); 
+        bool Delete(ID id);
+        bool Update(CLASS obj);
 
         CLASS Authenticate(string uname, string password);
-     
     }
 }

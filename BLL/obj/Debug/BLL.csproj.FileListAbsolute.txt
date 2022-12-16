@@ -1,14 +1,14 @@
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\BLL.dll
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\BLL.pdb
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\AutoMapper.dll
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\DAL.dll
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\EntityFramework.dll
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\DAL.pdb
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\DAL.dll.config
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\AutoMapper.xml
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\bin\Debug\EntityFramework.xml
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\obj\Debug\BLL.csproj.CopyComplete
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\obj\Debug\BLL.dll
-C:\Users\88018\source\repos\BirthCitificateManagement\BLL\obj\Debug\BLL.pdb
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\BLL.dll
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\BLL.pdb
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\DAL.dll
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\DAL.pdb
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\obj\Debug\BLL.dll
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\obj\Debug\BLL.pdb
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\EntityFramework.dll
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\DAL.dll.config
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\EntityFramework.xml
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\AutoMapper.dll
+D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\BLL\bin\Debug\AutoMapper.xml

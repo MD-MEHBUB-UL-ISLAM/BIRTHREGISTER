@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\88018\source\repos\BirthCitificateManagement\DAL\EF\BIRTH.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\AIUB\9th Semester\ADVANCED PROGRAMMING WITH .NET [B]\MY Work\Visual Studio\BirthCertificate\DAL\EF\BIRTH.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

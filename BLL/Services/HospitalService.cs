@@ -2,6 +2,7 @@
 using BLL.DTOs;
 using DAL;
 using DAL.EF;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,30 +36,41 @@ namespace BLL.Services
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<  Hosital_information, HospitalDTO>();
                 cfg.CreateMap<Hosital_information, HospitalDTO>();
+                cfg.CreateMap< HospitalDTO, Hosital_information>();
             });
             var mapper = new Mapper(config);
             var data = mapper.Map<HospitalDTO>(dto);
             var result = DataAccessFactory.GroupDataAccess().Add(default);
-            var rdata= mapper.Map<HospitalDTO>(result);
+            var rdata = mapper.Map<HospitalDTO>(result);
             return rdata;
         }
 
 
-        public static HospitalDTO Delete(ChildinfoDTO dto)
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.GroupDataAccess().Delete(id);
+        }
+
+
+        public static HospitalDTO Update(HospitalDTO dto)
         {
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Hosital_information, HospitalDTO>();
-                cfg.CreateMap<Hosital_information, HospitalDTO>();
+                cfg.CreateMap<HospitalDTO, Hosital_information>();
             });
             var mapper = new Mapper(config);
             var data = mapper.Map<HospitalDTO>(dto);
-            var result = DataAccessFactory.GroupDataAccess().Delete(default);
+            var result = DataAccessFactory.GroupDataAccess().Add(default);
             var rdata = mapper.Map<HospitalDTO>(result);
             return rdata;
         }
+
+        public static object Delete(HospitalDTO hospital)
+        {
+            throw new NotImplementedException();
+        }
     }
-    }
+}
 

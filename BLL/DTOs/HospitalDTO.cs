@@ -9,7 +9,6 @@ namespace BLL.DTOs
 {
     public class HospitalDTO
     {
-
         public string HospitalName { get; set; }
         public string HospitalLocation { get; set; }
         public int HospitalCode { get; set; }
